@@ -1,0 +1,63 @@
+.section1 {
+  background: url("../../../public/darkwall.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .section1 {
+    justify-content: center;
+  }
+}
+@media (max-width: 460px) {
+  .section1 {
+    background-size: cover;
+    background: url("../../../public/darkwall3.jpg");
+  }
+}
+
+.textbox {
+  /* border: 2px solid burlywood; */
+  height: 500px;
+  width: 700px;
+}
+.head {
+  text-align: left;
+  color: white;
+  line-height: 1.2em;
+}
+.subpara {
+  color: white;
+  margin-top: -20px;
+  font-weight: lighter;
+  font-size: 0.95rem;
+}
+.textwrap {
+  width: 70%;
+  margin: auto;
+  height: 100%;
+}
+.knowmore {
+  display: flex;
+  min-height: 50px;
+  max-width: 180px;
+  color: white;
+  border: 2px solid #d33333;
+  text-decoration: none;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  /* animation: backchange 3s linear infinite; */
+  background: linear-gradient(20deg, #fa9292, rgb(251, 55, 55));
+
+  transition: 0.5s all;
+}
+
+.knowmore:hover {
+  transform: scale(1.1);
+}

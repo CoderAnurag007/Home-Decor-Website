@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+.section2 {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(116, 123, 132), rgb(34, 46, 62));
+  width: 100%;
+}
+
+.container {
+  width: 50%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  padding: 20px;
+  margin: 10px 10px;
+}
+
+.container h3 {
+  color: white;
+  font-weight: lighter;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.formbox {
+  position: relative;
+  width: 80%;
+}
+.inputbox {
+  position: relative;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputbox .box {
+  display: flex;
+  color: rgb(223, 207, 205);
+  align-items: center;
+}
+#ion {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+textarea {
+  outline: none;
+  width: 260px;
+  min-height: 100px;
+  position: relative;
+}
+input {
+  width: 258px;
+  margin-bottom: 10px;
+  height: 25px;
+  outline: none;
+  transition: 0.5s;
+  border-radius: 12px;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+.submit {
+  width: 120px;
+  height: 40px;
+  background: linear-gradient(20deg, #fa9292, rgb(251, 55, 55));
+  display: block;
+  margin-top: 10px;
+  color: white;
+  border: 2px solid #f81e1e;
+  cursor: pointer;
+}
+
+#sub-btn {
+  border-radius: 0px;
+  height: 45px;
+  width: 170px;
+}
+.inputbox:nth-child(5) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-top: 20px;
+  transition: 0.5s;
+  width: 30%;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.inputbox:nth-child(5):hover {
+  transform: scale(1.1);
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  transition: 0.25s;
+  border: 2px solid black;
+  border-radius: 12px;
+  background: transparent;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid rgb(118, 118, 118);
+  border-bottom: 2px solid rgb(118, 118, 118);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+@media (max-width: 671px) {
+  .container {
+    width: 400px;
+  }
+  input {
+    width: 200px;
+  }
+  textarea {
+    width: 200px;
+    height: 90px;
+  }
+
+  .formbox {
+    width: 100%;
+  }
+  .container h3 {
+    font-size: 1.5em;
+  }
+  #ion {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 460px) {
+  input {
+    width: 150px;
+  }
+
+  textarea {
+    width: 150px;
+  }
+}
