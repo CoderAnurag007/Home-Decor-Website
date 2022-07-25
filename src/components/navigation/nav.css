@@ -15,21 +15,23 @@
   width: 400px;
   height: 50px;
   margin-right: 40px;
+  transition: 1.5s all;
 }
 .logo {
+  cursor: pointer;
   margin-left: 20px;
   font-size: 1.2rem;
   font-weight: 400;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-ul {
+.desk-ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-ul li {
+.desk-ul li {
   list-style: none;
   display: flex;
   align-items: center;
@@ -37,18 +39,64 @@ ul li {
   height: 40px;
   width: 80px;
 }
-ul li a {
+.desk-ul li a {
   text-align: center;
   text-decoration: none;
   color: white;
 }
 
-ul li:hover {
+.desk-ul li:hover {
   color: rgb(255, 79, 70);
   background-color: rgba(255, 255, 255, 0.228);
   transition: 0.3s;
   cursor: pointer;
 }
-ul li:nth-child(4) {
+.desk-ul li:nth-child(4) {
   width: 100px;
+}
+.collapse-btn {
+  height: 25px;
+  width: 25px;
+  display: none;
+}
+
+.collapse-nav {
+  width: 150px;
+  height: 300px;
+  background: linear-gradient(90deg, rgb(116, 123, 132), rgb(34, 46, 62));
+  position: absolute;
+  right: -220px;
+  transition: 1.5s all;
+  top: 70px;
+}
+
+.phone-ul {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+.phone-ul li {
+  list-style: none;
+  width: 100%;
+  border: 1px solid white;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+.phone-ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+@media (max-width: 530px) {
+  .links .desk-ul {
+    display: none;
+  }
+  .collapse-btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
 }
