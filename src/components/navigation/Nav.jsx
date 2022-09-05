@@ -3,7 +3,6 @@ import { useState } from "react";
 import svg from "./align-right-solid.svg";
 import "./nav.css";
 const Nav = () => {
-  var logo = document.getElementsByClassName("logo");
   const [style, setstyle] = useState({});
   const change = () => {
     setstyle({
